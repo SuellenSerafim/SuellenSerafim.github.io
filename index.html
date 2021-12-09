@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Suellen Serafim</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/assignment4-theme.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+        <script src="js/data.js"></script>
+        <script src="js/a4-main.js"></script>
+        <script>
+            function showRate(){
+                var hiring = document.getElementById("hiring");
+                var rateLabel = document.getElementById("rateLabel");
+                var rateInput = document.getElementById("rateInput");
+                var hourlyRate = document.getElementById("hourlyRate");
+                if (hiring.checked){
+                    rateInput.style.display="block";
+                    rateLabel.style.display="block";                    
+                    hourlyRate.setAttribute("required","");
+                    hourlyRate.required=true;
+                }else{
+                    rateInput.style.display="none";
+                    rateLabel.style.display="none";
+                    hourlyRate.required=false;
+                    hourlyRate.removeAttribute("required");
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <section class="main header section-1">
+            <div class="center">
+                <img src="image/Suellen.JPG" class="photo" >
+                <h1 class="app-title">
+                    Suellen Serafim 
+                </h1>
+                <h2 class="app-sub-title">
+                    Web Developer
+                </h2>
+                <div class="side-by-side">
+                    <div class="left round"> <a href="https://www.linkedin.com/in/suellen-serafim/"  target="_blank" class="link">LinkedIn</a></div>
+                    <div class="right round"> <a href="#form" class="link">Contact me</a></div>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <section class="main header section-2">
+            <div class="side-by-side box" style="width: 95%;">
+                <div class="left">
+                    <span class="title">About Me</span>
+                    <p class="text">I am a multidisciplinary professional, curious, dynamic and focused. 
+                        My professional career started in the engineering field where I had the opportunity
+                         to work with local content certification and improve my knowledge inside the oil 
+                         and gas industry.</p>
+                         <p class="text"> I had experience working in the family business as an administrator 
+                         and seller. Later I’ve opened a company in the food sector where I was the general
+                          manager. I started to walk a new path in IT that in my view has the power to improve 
+                          people's lives and consequently bring solutions to several global issues through 
+                          technology.</p>
+                </div>
+                <div class="right">
+                    <span class="title">Basic Information</span>
+                    <table class="main-table">
+                        <tbody>
+                            <tr>
+                                <th>Age:</th>
+                                <td>39</td>
+                            </tr>
+                            <tr>
+                                <th>Email:</th>
+                                <td>sserafim@myseneca.ca</td>
+                            </tr>
+                            <tr>
+                                <th>Language:</th>
+                                <td>English, French and Portuguese</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="main header section-1">
+            <div class="grid-container-100">
+                <div class="center">
+                    <h2 class="app-sub-title">
+                        Education
+                     </h2>
+                </div>
+                <div class="grid-container-25-75 box">
+                    <div class="blue-box"> <p style="font-size: 1vw;">2021 - 2023(expected)</p>
+                        <p>Diploma</p></div>
+                    <div class="ed-detail text">
+                        <h3>Diploma</h3>
+                        <span>SENECA COLLEGE</span>
+                        <br>
+                        <p>Computer Programming</p>
+                    </div>
+                </div>
+                <div class="grid-container-25-75 box">
+                    <div class="blue-box"> <p style="font-size: 1vw;">2010 - 2014</p>
+                        <p>Bachelor's Degree</p></div>
+                    <div class="ed-detail text">
+                        <h3>Bachelor's Degree</h3>
+                        <span>UNESA - ESTACIO DE SA UNIVERSITY</span>
+                        <br>
+                        <p>Petroleum Engineering, Oil and Gas</p>
+                    </div>
+                </div>
+                
+            </div>
+                
+       
+        </section>
+
+        <section class="main header section-1">
+            <div class="grid-container-100">
+                <div class="center">
+                    <h2 class="app-sub-title">
+                        Contact Me
+                     </h2>
+                </div>                
+
+                <form id="form" method="post" target="https://httpbin.org/post">
+                    <input type="hidden" value="Suellen Serafim" name="studentName">
+                    <input type="hidden" value="104994215" name="studentId">
+                <div class="grid-container-25-75 box form" style="width: 70%;">                    
+                        <div class="label">Name</div>
+                        <div class="input">
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="label">Email Address</div>
+                        <div class="input">
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="label">City</div>
+                        <div class="input">
+                            <input list="cities" type="text" name="city" required>
+                            <datalist id="cities" style="display: none;">
+                                <option value="Toronto"/>
+                                <option value="Aurora"/>
+                                <option value="Mississauga"/>
+                                <option value="London"/>
+                                <option value="Newmarket"/>
+                                <option value="King"/>
+                                <option value="Tillsonburg"/>
+                                <option value="Fergus"/>
+                                <option value="Woodstock"/>
+                                <option value="Barrie"/>
+                                <option value="Vancouver"/>
+                                <option value="Regina"/>
+                                <option value="Yucon"/>
+                                <option value="Markham"/>
+                            </datalist>
+                        </div>
+                        <div class="label">Postal Code</div>
+                        <div class="input">
+                            <input type="text" name="postalCode" maxlength="7" required>
+                        </div>
+                        <div class="label">
+                            Intention                           
+                        </div>
+                        <div class="input">                            
+                            <input type="radio" id="question" name="intention" value="Question" required onchange="showRate()">
+                            <label for="question">Question</label>
+                            
+                            <input type="radio" id="comment" name="intention" value="Comment" required onchange="showRate()">
+                            <label for="comment">Comment</label>                            
+                            
+                            <input type="radio" id="hiring" name="intention" value="Hiring" required onchange="showRate()">
+                            <label for="hiring">Hiring</label>
+                            
+                        </div>
+                        <div class="label" id="rateLabel" style="display: none;">Hourly Rate</div>
+                        <div class="input" id="rateInput" style="display: none;">
+                            <input name="hourlyRate" id="hourlyRate" type="number">
+                        </div>
+                        <div class="label">Message</div>
+                        <div class="input">
+                            <textarea name="content" rows="6" cols="80"  required></textarea>
+                        </div>
+                        <div class="label"></div>
+                        <div class="input">
+                            <button type="submit" name="send">Send </button>
+                        </div>
+                    
+                </div>
+            </form>
+                
+            </div>
+                
+       
+        </section>
+
+        <footer class="section-4">
+            <div class="center">
+                &copy; 2021 Suellen Serafim
+            </div>
+        </footer>
+    </body>
+</html>
+
+

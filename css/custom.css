@@ -1,0 +1,215 @@
+/* Place all of your CSS Code in this file */
+
+/********************************************************************************* 
+*
+* WEB222 – Assignment #4
+*
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: Suellen Serafim Student ID: 104994215 Date: 2021/11/09
+* 
+********************************************************************************/
+
+span {
+
+    font: 95% Tahoma, sans-serif;
+    font-weight: bolder;
+    text-decoration: solid;
+}
+footer {
+    height: 30px;
+    color: #eee;
+    text-align: left;
+    font-size: 95%;
+    padding-top: 13px;
+	vertical-align:middle; 
+}
+
+.main {
+    min-height: 260px;
+    max-height: 760px;
+}
+
+.center{
+	max-width:1100px;
+    min-width: 300px;
+	margin:0 auto;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.header{
+    text-align: center;
+    padding-top:1vw;
+	    margin-bottom:0px;
+        display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-1{
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    background-color: rgb(112, 120, 134);
+}
+
+.side-by-side{
+    width: 50%; /* Can be in percentage also. */
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+.right {
+    float: right;
+    width: 40%;    
+    margin: 5px;
+}
+.left {
+    float: left;
+    width: 40%;
+    margin: 5px;
+}
+.round{
+    background-color: rgba(5, 71, 194, 0.63);
+    border-radius: 50px;
+    min-height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+
+.section-2{
+    background-color: white;
+    text-align: left;
+    margin-bottom: 1vw;
+}
+.section-4{
+    background-color: rgb(5, 71, 194);
+    text-align: left;
+    margin-bottom: 1vw;
+}
+
+.text{
+    color: darkslategray;
+    font-size: 1.2vw;
+}
+
+.box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(11, 6, 65);
+    font-size: 2.2vw;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+
+.app-title{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(11, 6, 65);
+    font-size: 5vw;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+.app-sub-title{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(11, 6, 65);
+    font-size: 3vw;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+
+.main-table{
+    width: 100%;
+    font-size: 1.2vw;
+}
+
+.main-table th{
+    height: 3vw;
+    width: 40%;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.main-table td{
+    height: 3vw;
+    width: 60%;
+    text-align: left;
+    
+    
+}
+
+.grid-container-100{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    
+}
+
+.grid-container-25-75 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 1vw;
+    background-color: white;
+    
+}
+.blue-box{
+    background-color: rgb(5, 71, 194);
+    text-align: center;
+    color: white;
+    font-size: 1.5vw;
+}
+.ed-detail{
+    text-align: left;
+    padding-top: 7px;
+}
+
+.ed-detail h3{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(11, 6, 65);
+    font-size: 1.5vw;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+.ed-detail span{
+font-size: 0.8vw;
+}
+
+.photo{
+    max-width: 20%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.form{
+    padding: 5px;
+}
+
+.label{
+    
+    text-align: right;
+}
+
+.input{
+    text-align: left;
+}
+
+.input input, textarea, radio{
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
